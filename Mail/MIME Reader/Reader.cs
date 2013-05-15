@@ -80,6 +80,10 @@ namespace MIME_Reader
             m_mail.CC.Add(this.textBoxCC.Text);
         
         }
+        private void ParseMail(StreamReader sr)
+        {
+
+        }
 
         private void openMailToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -93,6 +97,7 @@ namespace MIME_Reader
                 }
                
             }
+            ParseMail();
 
             // 
             // DyButton
